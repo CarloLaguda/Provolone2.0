@@ -46,6 +46,6 @@
 <div>
   @for(pre of vett_prenotazioni; track pre)
   {
-    <pre>{{pre | json}}</pre>
+    <app-lista-prenotazioni [prenotazione] = "pre"></app-lista-prenotazioni>
   }
 </div>

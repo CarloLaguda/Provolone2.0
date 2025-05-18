@@ -4,13 +4,15 @@ import { Prenotation } from './Models/Prenotation.model';
 import { DatePipe, CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { ListaPrenotazioniComponent } from './lista-prenotazioni/lista-prenotazioni.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, DatePipe],
+  imports: [RouterOutlet, CommonModule, DatePipe, ListaPrenotazioniComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent implements OnInit {
   title = 'prenotazioni-Laguda';
 
