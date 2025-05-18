@@ -20,31 +20,32 @@
   <div>
     <p>Telelfono</p>
     <div>
-      <input type="text" #telelfono>
+      <input type="number" #telefono>
     </div>
   </div>
   <div>
     <p>Mail</p>
     <div>
-      <input type="text" #mail>
+      <input type="mail" #mail>
     </div>
   </div>
   <div>
     <p>Data Prenotazioni</p>
     <div>
-      <input type="text" #data>
+      <input type="date" #data>
     </div>
   </div>
   <div>
     <p>Ora Prenotazioni</p>
     <div>
-      <input type="text" #ora>
+      <input type="time" #ora>
     </div>
   </div>
   <div>
-    <button fai_Prenotazione(nome, cognome, indirizzo, telefono, mail, data, ora)>Aggiungi prenotazione</button>
+    <button (click) = "fai_Prenotazione(nome, cognome, indirizzo, telefono, mail, data, ora)">Aggiungi prenotazione</button>
   </div>
 </div>
+
 
 <div>
   @for(pre of vett_prenotazioni; track pre)

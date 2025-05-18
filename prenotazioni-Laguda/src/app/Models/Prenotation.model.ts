@@ -5,9 +5,9 @@ export class Prenotation{
     telefono: number
     mail: string
     data: Date
-    ora: number
+    ora: string
 
-    constructor(nome: string, cognome:string, indirizzo:string, telefono: number, mail: string, data: Date, ora: number){
+    constructor(nome: string, cognome:string, indirizzo:string, telefono: number, mail: string, data: Date, ora: string){
         this.nome = nome
         this.cognome = cognome
         this.indirizzo = indirizzo
@@ -16,4 +16,8 @@ export class Prenotation{
         this.data = data
         this.ora = ora
     }
+}
+
+export interface Response{
+    id: number
 }
